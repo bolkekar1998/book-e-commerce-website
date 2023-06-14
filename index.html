@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position:static;
+  right: 0;
+  bottom: 0;
+  padding-top: 20px;
+  min-width: 50%; 
+  min-height: 40%;
+}
+
+.content {
+  position: static;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 90%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gajanan Book store shopping Online </title>
+    <!--fevicon icon-->
+    <link rel="icon" href="https://png.pngtree.com/template/20190316/ourmid/pngtree-books-logo-image_80022.jpg" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="headerLeft">
+            <div class="logoContainer">
+                <img src="./img/meesho.png" />
+            </div>
+
+            <!--seach box-->
+            <div class="searchInputContainer">
+                <div class="searchIcon">
+                    <img src="./img/search.png" />
+                </div>
+                <form action="" id="inputForm">
+                    <input type="text" placeholder="Search Books, Authors, Story Books" class="inputSearch" />
+                </form>
+                <div class="inputCloseSearch">
+                    <i class="fa-solid fa-xmark" id="closeSearch"></i>
+                </div>
+
+                <div class="searchRecentModal">
+                    <h3>Recent Searches</h3>
+                    <div class="listofRecent">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="headerRight">
+            <div class="downloadContainer">
+                <div class="mobileIcon">
+                    <img src="./img/mobile.png" />
+                </div>
+                <p>Download App</p>
+
+                <div class="downloadHoverBtnContainer">
+                    <h3>Download From</h3>
+
+                    <a href="" class="downloadBtn">
+                        <img src="https://images.meesho.com/images/pow/playstore-icon-big.webp" />
+                    </a>
+                    <a href="" class="downloadBtn">
+                        <img src="https://images.meesho.com/images/pow/appstore-icon-big.webp" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="becomeSupplierContainer">
+                <p>Become a Supplier</p>
+            </div>
+
+            <div class="profileAndCart">
+                <div class="profileContainer">
+                    <div class="profileIcon">
+                        <img src="./img/user.png" />
+                    </div>
+                    <p> <a class="ex1" href="profile.html ">Profile</a></p>
+                </div>
+
+                <div class="CartContainer">
+                    <div class="CartIcon">
+                        <img src="./img/cart.png" />
+                    </div>
+                    <p  >  <a>Cart</a></p>
+                </aCart<>
+            </div>
+        </div>
+    </header>
+
+    <!--navigation-->
+    <nav>
+        <ul>
+            <li><a href="History.html">History</a>
+
+                <div class="subMenu">
+                    <div id="womenEthic" class="submenuList">
+
+                    </div>
+                </div>
+            </li>
+            <li>    <a href="holy.html"> Holy Books</a>
+                <div class="subMenu">
+                    <div id="womenWestern" class="submenuList">
+
+                    </div>
+
+                </div>
+            </li>
+            <li><a href="kids.html">Kids Books</a>
+                <div class="subMenu">
+                    <div id="men" class="submenuList">
+
+                    </div>
+                </div>
+
+
+
+            </li>
+            <li><a href="gk.html">GK Books</a>
+                <div class="subMenu">
+                    <div id="kids" class="submenuList">
+
+                    </div>
+                </div>
+            </li>
+            <li><a href="biography.html">Biography</a>
+                <div class="subMenu">
+                    <div id="beautyAndHealth" class="submenuList">
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!--lowest prices-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/banner9.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/banner6.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/books banner3.jpeg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+           
+    <!--Top Categories to choose from-->
+    <div class="topCategoriesFrom">
+        <div class="topCategoriesHeading">
+            <span class="horizontalLine"></span>
+            <h1>Top Categories to choose from</h1>
+            <span class="horizontalLine"></span>
+        </div>
+        <div class="topCategoreisImage">
+            <img src="img/ban3.jpeg" />
+            <img src="img/ban2.jpeg" />
+            <img src="img/ban1.jpeg"  /> 
+        </div>
+
+        <div class="essentialContaienr">
+            <img src="https://images.meesho.com/images/marketing/1664368165450.webp" class="essen-btn" />
+
+            <div class="essential_item">
+                <img src="https://images.meesho.com/images/marketing/1649760808952.webp" />
+                <img src="https://images.meesho.com/images/marketing/1664364866805.webp" />
+            </div>
+
+            <div class="essential_item">
+                <img src="https://images.meesho.com/images/marketing/1649760703179.webp" />
+                <img src="https://images.meesho.com/images/marketing/1664364917657.webp" />
+            </div>
+
+            <div class="essential_item">
+                <img src="https://images.meesho.com/images/marketing/1649760786763.webp" />
+                <img src="https://images.meesho.com/images/marketing/1664364898513.webp" />
+            </div>
+
+        </div>
+
+
+        <div class="becomesellerBanner_Container">
+            <img src="https://images.meesho.com/images/pow/downloadBannerDesktop.webp" class="becomesellerBanner" />
+            <div class="becomeSeller_Content">
+                <div class="becomeSeller_content_content">
+                    <h2>Become a Seller and </h2>
+                    <h1>Start your Online Business
+                        with Zero Investment</h1>
+                    <div class=" becomerSeller_appDownload_container">
+                        <a href="#" class="becomerSeller_appDownload">
+                            <img src="https://images.meesho.com/images/pow/playstoreIcon.webp" />
+                        </a>
+                        <a href="#" class="becomerSeller_appDownload">
+                            <img src="https://images.meesho.com/images/pow/appstoreIcon.webp" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="meesho_supper_container">
+            <img src="https://images.meesho.com/images/pow/supplyBannerDesktop.webp" />
+            <div class="meesho_supper_container_content">
+                <div class="meesho_supper_container_content_content">
+                    <h1>Register as a Gajanan Books Supplier</h1>
+                    <p>Sell your products to crores of customers at 0% commission</p>
+                    <div class="meesho-suppliear_benifit_container">
+                        <div class="meesho_supper_benifit">
+                            <img class="meeesho_benifit_image"
+                                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMCAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDEwLjVDMCA0Ljk4IDQuNDggMC41IDEwIDAuNUMxNS41MiAwLjUgMjAgNC45OCAyMCAxMC41QzIwIDE2LjAyIDE1LjUyIDIwLjUgMTAgMjAuNUM0LjQ4IDIwLjUgMCAxNi4wMiAwIDEwLjVaTTcuMjgyODggMTQuNzkyNUM3LjY3Mjg4IDE1LjE4MjUgOC4zMDI4OCAxNS4xODI1IDguNjkyODggMTQuNzkyNUwxNi4yNzI5IDcuMjAyNUMxNi42NjI5IDYuODEyNSAxNi42NjI5IDYuMTgyNSAxNi4yNzI5IDUuNzkyNUMxNS44ODI5IDUuNDAyNSAxNS4yNTI5IDUuNDAyNSAxNC44NjI5IDUuNzkyNUw3Ljk4Mjg4IDEyLjY3MjVMNS4xMDI4OCA5Ljc5MjVDNC43MTI4OCA5LjQwMjUgNC4wODI4OCA5LjQwMjUgMy42OTI4OCA5Ljc5MjVDMy41MDU2MiA5Ljk3OTMzIDMuNDAwMzkgMTAuMjMzIDMuNDAwMzkgMTAuNDk3NUMzLjQwMDM5IDEwLjc2MiAzLjUwNTYyIDExLjAxNTcgMy42OTI4OCAxMS4yMDI1TDcuMjgyODggMTQuNzkyNVoiIGZpbGw9IiMwNkE3NTkiLz4KPC9zdmc+Cg==" />
+                            <p>Grow your business 10x</p>
+                        </div>
+                        <div class="meesho_supper_benifit">
+                            <img class="meeesho_benifit_image"
+                                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMCAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDEwLjVDMCA0Ljk4IDQuNDggMC41IDEwIDAuNUMxNS41MiAwLjUgMjAgNC45OCAyMCAxMC41QzIwIDE2LjAyIDE1LjUyIDIwLjUgMTAgMjAuNUM0LjQ4IDIwLjUgMCAxNi4wMiAwIDEwLjVaTTcuMjgyODggMTQuNzkyNUM3LjY3Mjg4IDE1LjE4MjUgOC4zMDI4OCAxNS4xODI1IDguNjkyODggMTQuNzkyNUwxNi4yNzI5IDcuMjAyNUMxNi42NjI5IDYuODEyNSAxNi42NjI5IDYuMTgyNSAxNi4yNzI5IDUuNzkyNUMxNS44ODI5IDUuNDAyNSAxNS4yNTI5IDUuNDAyNSAxNC44NjI5IDUuNzkyNUw3Ljk4Mjg4IDEyLjY3MjVMNS4xMDI4OCA5Ljc5MjVDNC43MTI4OCA5LjQwMjUgNC4wODI4OCA5LjQwMjUgMy42OTI4OCA5Ljc5MjVDMy41MDU2MiA5Ljk3OTMzIDMuNDAwMzkgMTAuMjMzIDMuNDAwMzkgMTAuNDk3NUMzLjQwMDM5IDEwLjc2MiAzLjUwNTYyIDExLjAxNTcgMy42OTI4OCAxMS4yMDI1TDcuMjgyODggMTQuNzkyNVoiIGZpbGw9IiMwNkE3NTkiLz4KPC9zdmc+Cg==" />
+                            <p>Enjoy 100% Profit</p>
+                        </div>
+                        <div class="meesho_supper_benifit">
+                            <img class="meeesho_benifit_image"
+                                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMCAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDEwLjVDMCA0Ljk4IDQuNDggMC41IDEwIDAuNUMxNS41MiAwLjUgMjAgNC45OCAyMCAxMC41QzIwIDE2LjAyIDE1LjUyIDIwLjUgMTAgMjAuNUM0LjQ4IDIwLjUgMCAxNi4wMiAwIDEwLjVaTTcuMjgyODggMTQuNzkyNUM3LjY3Mjg4IDE1LjE4MjUgOC4zMDI4OCAxNS4xODI1IDguNjkyODggMTQuNzkyNUwxNi4yNzI5IDcuMjAyNUMxNi42NjI5IDYuODEyNSAxNi42NjI5IDYuMTgyNSAxNi4yNzI5IDUuNzkyNUMxNS44ODI5IDUuNDAyNSAxNS4yNTI5IDUuNDAyNSAxNC44NjI5IDUuNzkyNUw3Ljk4Mjg4IDEyLjY3MjVMNS4xMDI4OCA5Ljc5MjVDNC43MTI4OCA5LjQwMjUgNC4wODI4OCA5LjQwMjUgMy42OTI4OCA5Ljc5MjVDMy41MDU2MiA5Ljk3OTMzIDMuNDAwMzkgMTAuMjMzIDMuNDAwMzkgMTAuNDk3NUMzLjQwMDM5IDEwLjc2MiAzLjUwNTYyIDExLjAxNTcgMy42OTI4OCAxMS4yMDI1TDcuMjgyODggMTQuNzkyNVoiIGZpbGw9IiMwNkE3NTkiLz4KPC9zdmc+Cg==" />
+                            <p>Sell all over India</p>
+                        </div>
+                    </div>
+                    <a href="registration form.html" class="signup_btn_now">Sign up now</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+            </main>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="script.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+ 
+ var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+ </script>   
+</body>
+
+
+<video autoplay muted loop id="myVideo">
+    <source src="img/Book Promotion Video_HD.mp4" type="video/mp4">
+    
+  </video>
+  
+  </div>
+
+<footer class="bg-light text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #3b5998;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #55acee;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #dd4b39;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #ac2bac;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #0082ca;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <!-- Github -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #4860eb;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Gajanan Bolkekar</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</html>
+
